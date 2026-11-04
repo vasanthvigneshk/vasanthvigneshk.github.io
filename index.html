@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#211713">
+<meta name="description" content="Portfolio of Vasanth Vignesh K., Independent Multimedia Creative based in Bengaluru, India.">
+<title>Vasanth Vignesh K. — Independent Multimedia Creative</title>
+<style>
+:root{--bistre:#211713;--gold:#d9a441;--butter:#f7f0e4;--indian:#a34e43;--garnet:#702d35;--muted:#bcae9c;--line:rgba(247,240,228,.15)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bistre);color:var(--butter);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}img{display:block;max-width:100%}.wrap{width:min(1160px,88%);margin:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.14em;text-decoration:none;font-size:14px}.brand span{color:var(--gold)}
+nav{display:flex;gap:24px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}nav a:hover{color:var(--gold)}
+.hero{min-height:620px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding:90px 0 80px}
+.eyebrow,.label{color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+h1{font-family:Georgia,serif;font-size:clamp(58px,9vw,112px);line-height:.94;letter-spacing:-.06em;font-weight:400;margin:22px 0}
+h1 span{color:var(--gold);font-style:italic}.role{font-family:Georgia,serif;font-size:clamp(20px,2.6vw,29px);color:var(--butter);max-width:680px}
+.intro{max-width:570px;color:var(--muted);font-size:16px;margin:24px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:12px 18px;border:1px solid var(--gold);text-decoration:none;font-size:11px;letter-spacing:.1em;text-transform:uppercase}.btn.primary{background:var(--gold);color:var(--bistre)}.btn:hover{background:var(--indian);border-color:var(--indian);color:white}
+.hero-note{border:1px solid var(--line);padding:32px;position:relative;background:linear-gradient(145deg,rgba(217,164,65,.11),rgba(112,45,53,.16))}
+.hero-note:before{content:"";position:absolute;top:-9px;left:24px;width:48px;height:3px;background:var(--gold)}
+.hero-note .big{font:italic 38px Georgia,serif;color:var(--gold);line-height:1.1}.hero-note p{color:var(--muted);font-size:13px}
+section{padding:82px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.5fr 1.5fr;gap:30px;margin-bottom:38px}
+h2{font:400 clamp(34px,5vw,58px)/1.04 Georgia,serif;margin:0;letter-spacing:-.035em}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about-copy{color:var(--muted);font-size:16px}.about-copy strong{color:var(--butter)}
+.facts{border-left:1px solid var(--gold);padding-left:25px}.fact{padding:0 0 18px;margin-bottom:18px;border-bottom:1px solid var(--line)}.fact b{display:block;color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.fact span{color:var(--butter);font-size:14px}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work-card{border:1px solid var(--line);background:#2b1d18;overflow:hidden}.work-card img{width:100%;height:250px;object-fit:cover;background:#33231d;transition:transform .5s}.work-card:hover img{transform:scale(1.035)}
+.work-copy{padding:18px}.work-copy small{color:var(--gold);letter-spacing:.15em;text-transform:uppercase;font-size:9px}.work-copy h3{font:24px Georgia,serif;margin:7px 0}.work-copy p{font-size:12px;color:var(--muted);margin:0}
+.project-feature{margin-top:24px;padding:30px;border:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:25px;background:linear-gradient(120deg,rgba(163,78,67,.16),transparent)}
+.project-feature h3{font:30px Georgia,serif;margin:0}.project-feature p{color:var(--muted);font-size:13px;margin:0}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:18px}.skill-panel{padding:25px;border:1px solid var(--line)}.skill-panel h3{font:25px Georgia,serif;color:var(--gold);margin:0 0 12px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid rgba(217,164,65,.45);padding:7px 10px;color:var(--butter);font-size:11px}
+.ai-panel{padding:38px;background:var(--garnet);display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.ai-panel h3{font:38px Georgia,serif;margin:0 0 12px}.ai-panel p{color:#f0dcd0;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-top:2px solid var(--gold);padding-top:14px}.step b{display:block;color:var(--gold);font:22px Georgia,serif}.step span{font-size:12px;color:var(--muted)}
+form{display:grid;gap:12px}input,textarea,select{width:100%;background:#281b16;border:1px solid rgba(247,240,228,.25);padding:13px;color:var(--butter);font:13px Arial}textarea{min-height:115px;resize:vertical}input:focus,textarea:focus,select:focus{outline:1px solid var(--gold)}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.contact-copy p{color:var(--muted);font-size:14px}.contact-link{color:var(--gold);text-decoration:none;display:block;margin:8px 0}
+footer{padding:26px 0;color:var(--muted);font-size:11px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}
+@media(max-width:760px){.topbar{align-items:flex-start;gap:20px;flex-direction:column}nav{gap:14px}.hero{grid-template-columns:1fr;padding:65px 0}.hero-note{max-width:520px}.section-head,.about-grid,.project-feature,.ai-panel,.contact-grid{grid-template-columns:1fr}.work-grid{grid-template-columns:1fr 1fr}.skills{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.work-grid{grid-template-columns:1fr}.work-card img{height:230px}.wrap{width:90%}section{padding:62px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="#top">VASANTH<span>.</span></a>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a><a href="#work">Selected work</a><a href="#skills">Skills</a><a href="#create">Create with me</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Independent creative · Bengaluru, India</div>
+      <h1>Vasanth<br><span>Vignesh K.</span></h1>
+      <div class="role">Independent Multimedia Creative</div>
+      <p class="intro">I explore the space between visual design, animation, storytelling and emerging creative tools. I enjoy shaping an idea into something people can see, hear and feel.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">Explore selected work ↘</a>
+        <a class="btn" href="Vasanth_Vignesh_K_Resume.pdf" download>Download resume ↓</a>
+      </div>
+    </div>
+    <aside class="hero-note">
+      <div class="eyebrow">Creative approach</div>
+      <div class="big">An idea is<br>the beginning.</div>
+      <p>My focus is not only on the tool. It is on understanding the brief, finding the right visual direction and making the idea work as a finished creative output.</p>
+      <p><b style="color:var(--butter)">Graphic design · Storytelling · AI-assisted production</b></p>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="label">01 / About</div><h2>Creative thinking.<br>Stories with a point of view.</h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am a B.Sc. Animation and Multimedia graduate from IIFA Lancaster Degree College, Bengaluru. My interests span graphic design, animation, visual storytelling, screenwriting and AI-assisted creative production.</p>
+          <p>I use creative software and AI tools to explore ideas, develop visual directions and experiment with images, video, animation and music. I am currently exploring professional opportunities and looking to grow through practical work, collaboration and continued learning.</p>
+          <p>I am open to entry-level roles, trainee positions and internships where I can contribute and develop as a creative professional.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>Education</b><span>B.Sc. Animation &amp; Multimedia · 2022–2025</span></div>
+          <div class="fact"><b>Academic result</b><span>CGPA 8.616 / 10 · Distinction</span></div>
+          <div class="fact"><b>Based in</b><span>Bengaluru, Karnataka, India</span></div>
+          <div class="fact"><b>Creative identity</b><span>Independent Multimedia Creative</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head"><div class="label">02 / Selected work</div><h2>A selection of visual explorations.</h2></div>
+      <div class="work-grid">
+        <article class="work-card"><img src="assets/bookmonk-logo.png" alt="Book Monk logo exploration"><div class="work-copy"><small>Logo exploration</small><h3>Book Monk</h3><p>Personal logo studies exploring book forms, typography and a simple reading-inspired identity.</p></div></article>
+        <article class="work-card"><img src="assets/naruto-album.jpg" alt="Naruto-themed electronic music album cover design"><div class="work-copy"><small>Fan-art / cover study</small><h3>Naruto — Album Cover</h3><p>A character-led cover composition exploring title treatment, image hierarchy and mood.</p></div></article>
+        <article class="work-card"><img src="assets/jiraiya-art.png" alt="Jiraiya character artwork"><div class="work-copy"><small>Character artwork</small><h3>Jiraiya</h3><p>A character-focused visual composition from my personal design collection.</p></div></article>
+        <article class="work-card"><img src="assets/doraemon-poster.png" alt="Doraemon poster design"><div class="work-copy"><small>Poster study</small><h3>Doraemon</h3><p>A playful poster composition exploring layout, colour and character placement.</p></div></article>
+        <article class="work-card"><img src="assets/irecco-design.jpg" alt="I-RECCO visual design work"><div class="work-copy"><small>Visual design</small><h3>I-RECCO</h3><p>Visual design material included in my shared portfolio collection.</p></div></article>
+        <article class="work-card"><img src="assets/bookmonk-variation.png" alt="Book Monk alternate logo"><div class="work-copy"><small>Identity variation</small><h3>Book Monk — Variations</h3><p>Alternate logo directions and typography treatments developed as personal design explorations.</p></div></article>
+      </div>
+      <div class="project-feature">
+        <div><div class="label">Screenwriting · Incomplete</div><h3>NAN PIZHAI<br>— Our Mistake</h3></div>
+        <p>An original screenplay project currently unfinished. The 18-page rewrite is the latest version, following an earlier 57-page draft. It is presented here as a work in development, not as a completed film or screenplay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><div class="label">03 / Skills &amp; tools</div><h2>Creative craft meets digital tools.</h2></div>
+      <div class="skills">
+        <div class="skill-panel"><h3>Creative areas</h3><div class="chips"><span class="chip">Graphic design</span><span class="chip">3D modelling</span><span class="chip">Animation</span><span class="chip">Video editing</span><span class="chip">Screenwriting</span><span class="chip">Visual storytelling</span></div></div>
+        <div class="skill-panel"><h3>Creative software</h3><div class="chips"><span class="chip">Canva</span><span class="chip">Autodesk Maya</span><span class="chip">Unreal Engine</span><span class="chip">DaVinci Resolve</span><span class="chip">Adobe Photoshop</span><span class="chip">Celtx</span></div></div>
+        <div class="skill-panel" style="grid-column:1/-1"><h3>AI-assisted creative production</h3><div class="chips"><span class="chip">ChatGPT</span><span class="chip">Claude</span><span class="chip">Google Gemini</span><span class="chip">Google Flow</span><span class="chip">Higgsfield AI</span><span class="chip">SUNO</span></div><p style="color:var(--muted);font-size:13px;margin-bottom:0">Exploring AI-assisted image generation, video creation, animation concepts, story development and music/song generation. I focus on creative direction and adapting the tools to the idea.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="create">
+    <div class="wrap">
+      <div class="section-head"><div class="label">04 / Open creative experiment</div><h2>Bring an idea.<br>Let's make something.</h2></div>
+      <div class="ai-panel">
+        <div><div class="eyebrow">Create With Me · Free demonstrations</div><h3>AI Creative Studio</h3><p>Have a creative idea? Share the brief. I will review selected requests and, subject to my availability, try to turn them into an image, video concept, animation idea or song using AI tools and my own creative direction.</p></div>
+        <div class="steps">
+          <div class="step"><b>01</b><span>You share an idea or a rough brief.</span></div>
+          <div class="step"><b>02</b><span>I review it and plan a creative direction.</span></div>
+          <div class="step"><b>03</b><span>I make a selected demonstration and share the result.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="label">05 / Contact</div><h2>Have a project, opportunity<br>or idea in mind?</h2></div>
+      <div class="contact-grid">
+        <div class="contact-copy">
+          <p>I'm open to entry-level opportunities, internships, collaborations and selected free creative demonstrations.</p>
+          <a class="contact-link" href="mailto:vasanthvigneshk@outlook.com">vasanthvigneshk@outlook.com</a>
+          <a class="contact-link" href="tel:+91914838283">+91 9148383283</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/vasanthvigneshk?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <p>Bengaluru, Karnataka, India</p>
+        </div>
+        <form id="ideaForm">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <select name="type"><option>Image / visual concept</option><option>Video / animation concept</option><option>Song / music idea</option><option>Story / screenplay idea</option><option>Other creative request</option></select>
+          <textarea name="brief" placeholder="Tell me about your idea..." required></textarea>
+          <button class="btn primary" type="submit">Send creative brief ↗</button>
+          <small style="color:var(--muted)">This opens your email app with the brief prepared. Requests are free demonstrations and depend on availability.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Vasanth Vignesh K.</span><span>Independent Multimedia Creative</span></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('ideaForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const d = new FormData(this);
+  const subject = encodeURIComponent('Create With Me — ' + d.get('type'));
+  const body = encodeURIComponent('Name: '+d.get('name')+'\\nEmail: '+d.get('email')+'\\nRequest: '+d.get('type')+'\\n\\nCreative brief:\\n'+d.get('brief'));
+  window.location.href = 'mailto:vasanthvigneshk@outlook.com?subject='+subject+'&body='+body;
+});
+</script>
+</body></html>
